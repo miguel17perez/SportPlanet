@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bienvenido - Sports Planet</title>
+    <style>
+      /* Reset y configuración básica */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(to right, #1e1e1e, #2c2c2c);
+        color: #fff;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      /* Navbar */
+      header {
+        background-color: #0d0d0d;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+        border-bottom: 1px solid #333;
+      }
+
+      header h1 {
+        font-size: 32px;
+        color: #f39c12;
+        letter-spacing: 2px;
+      }
+
+      /* Sección principal */
+      .bienvenida {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 60px 20px;
+        text-align: center;
+        background: url("https://images.unsplash.com/photo-1667578398486-4fcc5b24cf84?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+          no-repeat center center / cover;
+        position: relative;
+      }
+
+      .overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 1;
+      }
+
+      .contacto-container {
+        position: relative;
+        z-index: 2;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 20px;
+        padding: 50px 40px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 0 30px rgba(243, 156, 18, 0.3);
+        max-width: 600px;
+        width: 90%;
+      }
+
+      .contacto-container h2 {
+        font-size: 24px;
+        color: #f39c12;
+        margin-bottom: 15px;
+      }
+
+      .contacto-container p {
+        font-size: 16px;
+        color: #eee;
+        margin-bottom: 30px;
+      }
+
+      .login-btn {
+        display: inline-block;
+        font-size: 18px;
+        text-decoration: none;
+        color: #fff;
+        background-color: #f39c12;
+        padding: 12px 30px;
+        border-radius: 30px;
+        transition: all 0.3s ease-in-out;
+        font-weight: bold;
+        box-shadow: 0 0 12px rgba(243, 156, 18, 0.4);
+      }
+
+      .login-btn:hover {
+        background-color: #fff;
+        color: #f39c12;
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba(243, 156, 18, 0.6);
+      }
+
+      /* Footer */
+      footer {
+        background-color: #0d0d0d;
+        color: #ccc;
+        text-align: center;
+        padding: 15px 10px;
+        font-size: 14px;
+        border-top: 1px solid #333;
+      }
+
+      /* Responsivo */
+      @media (max-width: 600px) {
+        .contacto-container {
+          padding: 30px 20px;
+        }
+
+        .contacto-container h2 {
+          font-size: 20px;
+        }
+
+        .login-btn {
+          padding: 10px 25px;
+          font-size: 16px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <h1>¡Bienvenidos a Sports Planet!</h1>
+    </header>
+
+    <!-- Bienvenida -->
+    <section class="bienvenida">
+      <div class="overlay"></div>
+      <div class="contacto-container">
+        <p>
+          Donde la pasión por el deporte y la excelencia en calidad se unen.
+          Explora lo mejor en artículos deportivos y lleva tu rendimiento al
+          siguiente nivel.
+        </p>
+        <a href="./pages/login.php" class="login-btn">Iniciar Sesión</a>
+        <a href="./pages/inicio.php" class="login-btn alt">Ver Tienda</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Sports Planet. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>
