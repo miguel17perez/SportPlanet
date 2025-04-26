@@ -1,0 +1,124 @@
+/* Fuente y estilo general */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #f3f3f3, #666);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Contenedor del recibo */
+.recibo-container {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilo del título */
+h2 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+/* Información del pedido */
+p {
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+/* Sección de la fecha de envío */
+.fecha-envio {
+    background: #333;
+    color: white;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+/* Tabla de productos */
+table {
+    width: 100%;
+    margin: 15px 0;
+    border-collapse: collapse;
+}
+
+th {
+    background: #333;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    font-size: 15px;
+}
+
+tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+/* Total */
+h3 {
+    background: #333;
+    color: white;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+/* Código QR */
+.qr-container {
+    margin: 15px 0;
+}
+
+.qr-container img {
+    width: 160px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Botón de imprimir */
+button {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 14px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #606060;
+    transform: scale(1.05);
+}
